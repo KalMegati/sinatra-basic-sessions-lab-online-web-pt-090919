@@ -12,7 +12,9 @@ class App < Sinatra::Base
   end
   
   post "/checkout" do
-    
+    params.each {
+      
+    }
   end
   
 end
