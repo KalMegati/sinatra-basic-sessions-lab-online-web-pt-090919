@@ -4,7 +4,9 @@ class App < Sinatra::Base
   
   configure do
     enable :sessions
-    set :session_secret
+    set :session_secret, "dimir"
   end
+  
+  
   
 end
