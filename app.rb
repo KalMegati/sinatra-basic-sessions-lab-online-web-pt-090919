@@ -12,8 +12,8 @@ class App < Sinatra::Base
   end
   
   post "/checkout" do
-    params.each {
-      
+    params.each { |k,v|
+      session[k.to_s] = v
     }
   end
   
